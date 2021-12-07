@@ -1,0 +1,47 @@
+<div class="create-account">
+        <div class="header">
+            <h3>Create Business Account</h3>
+        </div>
+        
+        <div class="row container">
+            <div class="col-md-8">
+                <form ngNativeValidate #consumerAccountForm="ngForm">
+                    <div class="col-md-12">
+                        <h4>Company Information</h4>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label>Company Name*</label>
+                        <input type="text" class="form-control" name="name" [(ngModel)]="businessAccount.name" data-automation-id="business-account-name" required />
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label>DBA Name (Doing Business As)</label>
+                        <input type="text" class="form-control" name="doingBusinessAs" [(ngModel)]="businessAccount.doingBusinessAs" data-automation-id="business-account-doingBusinessAs" />
+                    </div>
+                    <br />
+    
+                    <div class="col-md-12">
+                        <h4>Primary Contact</h4>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label>First Name*</label>
+                        <input type="text" class="form-control" name="firstName" [(ngModel)]="businessAccount.primaryContact.firstName" data-automation-id="business-account-firstName" required />
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label>Last Name*</label>
+                        <input type="text" class="form-control" name="lastName" [(ngModel)]="businessAccount.primaryContact.lastName" data-automation-id="business-account-lastName" required />
+                    </div>
+                    
+                    <div class="col-md-12 form-group">
+                        <label>Email Address*</label>
+                        <input type="email" class="form-control" name="email" [(ngModel)]="businessAccount.primaryContact.email" data-automation-id="business-account-email" required />
+                    </div>
+                   
+                    <hr />
+                    <div class="col-md-12">
+                        <!-- <vn-button type="submit">Open New Account</vn-button> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    

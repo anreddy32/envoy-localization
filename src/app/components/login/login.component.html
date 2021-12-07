@@ -1,3 +1,17 @@
+<div style="padding-left: 90%">
+  <ng-container style="width: 100%;float: right;">
+      <mat-icon style="vertical-align: middle">language</mat-icon>
+      <button mat-button [matMenuTriggerFor]="menu">{{siteLanguage}}
+          <mat-icon>arrow_drop_down</mat-icon>
+      </button>
+      
+      <mat-menu #menu="matMenu" xPosition="before">
+          <a mat-menu-item href="/en">English</a>
+          <a mat-menu-item href="/fr">French</a>
+          <a mat-menu-item href="/de">German</a>
+        </mat-menu>
+  </ng-container>
+</div> 
 <div class="login-container">
   <mat-card style="height: 400px;">
       <mat-card-content>

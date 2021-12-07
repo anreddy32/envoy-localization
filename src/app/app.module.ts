@@ -16,11 +16,18 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { CreateaccountComponent } from './components/createaccount/createaccount.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent,
+    CreateaccountComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +44,8 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
     MatCardModule,
     MatButtonModule,
     MatAutocompleteModule,
+    MatMenuModule,
+    MatToolbarModule,
     FormsModule,
     ReactiveFormsModule
   ],
