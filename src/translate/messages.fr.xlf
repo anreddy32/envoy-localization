@@ -2,9 +2,9 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
-<trans-unit id="2704635977586762526" datatype="html">
+      <trans-unit id="2704635977586762526" datatype="html">
         <source>For a World-Ready Workforce</source>
-<target>Für eine weltbereite Belegschaft</target>
+        <target>Pour une main-d'œuvre prête pour le monde</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/login/login.component.html</context>
           <context context-type="linenumber">8</context>
@@ -12,60 +12,47 @@
       </trans-unit>
       <trans-unit id="596374551754386779" datatype="html">
         <source>Log into Envoy</source>
-        <target>Melden Sie sich bei Envoy an</target>
+        <target>Connectez-vous à Envoy</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/login/login.component.html</context>
-          <context context-type="linenumber">3</context>
+          <context context-type="linenumber">14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="203827529942340818" datatype="html">
         <source>Enter your email</source>
-        <target>Geben sie ihre E-Mail Adresse ein</target>
+        <target>Entrer votre Email</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/login/login.component.html</context>
-          <context context-type="linenumber">7</context>
+          <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2794759160468320055" datatype="html">
-        <source>
-          <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span *ngIf=&quot;!loginForm.get(&apos;username&apos;)?.valid &amp;&amp; loginForm.get(&apos;username&apos;)?.touched&quot;&gt;"/> Please enter a valid email <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
-        </source>
-        <target>Bitte geben Sie eine gültige Email-Adresse ein</target>
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span *ngIf=&quot;!loginForm.get(&apos;username&apos;)?.valid &amp;&amp; loginForm.get(&apos;username&apos;)?.touched&quot;&gt;"/> Please enter a valid email <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>Veuillez entrer un email valide</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/login/login.component.html</context>
-          <context context-type="linenumber">10,12</context>
+          <context context-type="linenumber">22,24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2772023564304193657" datatype="html">
         <source>Enter your password</source>
-        <target>Geben Sie Ihr Passwort ein</target>
+        <target>Tapez votre mot de passe</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/login/login.component.html</context>
-          <context context-type="linenumber">19</context>
+          <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3239647626435558094" datatype="html">
-        <source>
-          <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span *ngIf=&quot;!loginForm.get(&apos;password&apos;)?.valid &amp;&amp; loginForm.get(&apos;password&apos;)?.touched&quot;&gt;"/> Please enter a password <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
-        </source>
-        <target>
-          Bitte Passwort eingeben
-        </target>
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span *ngIf=&quot;!loginForm.get(&apos;password&apos;)?.valid &amp;&amp; loginForm.get(&apos;password&apos;)?.touched&quot;&gt;"/> Please enter a password <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>Veuillez entrer un mot de passe</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/login/login.component.html</context>
-          <context context-type="linenumber">23,25</context>
+          <context context-type="linenumber">35,37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4166166242155319722" datatype="html">
         <source> Log In </source>
-        <target>Einloggen</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/login/login.component.html</context>
-          <context context-type="linenumber">30,32</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4166166242155319722" datatype="html">
-        <source> Log In </source>
+        <target>connexion</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/login/login.component.html</context>
           <context context-type="linenumber">42,44</context>
@@ -73,7 +60,7 @@
       </trans-unit>
       <trans-unit id="2252117488591535751" datatype="html">
         <source>Log in via SSO</source>
-        <target>Einloggen über SSO</target>
+        <target>Connectez-vous via SSO</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/login/login.component.html</context>
           <context context-type="linenumber">48</context>
@@ -81,7 +68,7 @@
       </trans-unit>
       <trans-unit id="892063502898494584" datatype="html">
         <source>I forgot my password</source>
-        <target>Ich habe mein Passwort vergessen</target>
+        <target>j'ai oublié mon mot de passe</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/login/login.component.html</context>
           <context context-type="linenumber">52</context>

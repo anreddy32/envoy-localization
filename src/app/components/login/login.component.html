@@ -1,34 +1,59 @@
-<div style="text-align:center">
-  <form [formGroup]="loginForm" autocomplete="off" novalidate>
-    <h3 i18n>Log into Envoy</h3>
+<div class="login-container">
+  <mat-card style="height: 400px;">
+      <mat-card-content>
+        <div>
+          <div id="loginFormBrand" class="card shadow float-left"  [ngClass]="{'slide-right': true}">
 
-    <div class="form-group">
-      <mat-form-field [hideRequiredMarker]="true" class="w-100">
-        <input matInput i18n-placeholder placeholder="Enter your email" formControlName="username" required>
+              <div id="bg-img" class="d-flex flex-column">
+                <span class="text-center" i18n>For a World-Ready Workforce</span>
+              </div>
 
-        <mat-error i18n>
-          <span *ngIf="!loginForm.get('username')?.valid && loginForm.get('username')?.touched">
-            Please enter a valid email
-          </span>
-        </mat-error>
-      </mat-form-field>
+          </div>
+        <div style="text-align:center;min-height:200px; min-width:400px;float: right;margin-top:40px">
+          <form [formGroup]="loginForm" autocomplete="off" novalidate>
+            <h3 i18n>Log into Envoy</h3>
+
+            <div class="form-group">
+              <mat-form-field [hideRequiredMarker]="true" class="w-100" appearance="standard">
+                <mat-label i18n>Enter your email</mat-label>
+                <input matInput formControlName="username" required>
+
+                <mat-error i18n>
+                  <span *ngIf="!loginForm.get('username')?.valid && loginForm.get('username')?.touched">
+                    Please enter a valid email
+                  </span>
+                </mat-error>
+              </mat-form-field>
+            </div>
+
+            <div class="form-group">
+              <mat-form-field [hideRequiredMarker]="true" class="w-100" appearance="standard">
+                  <mat-label i18n>Enter your password</mat-label>
+                <input matInput formControlName="password"
+                      [type]="maskUserPassword ? 'password' : 'text'" required >
+                <mat-error i18n>
+                  <span *ngIf="!loginForm.get('password')?.valid && loginForm.get('password')?.touched">
+                    Please enter a password
+                  </span>
+                </mat-error>
+              </mat-form-field>
+            </div>
+
+            <button mat-flat-button i18n color="primary" type="submit" class="w-100" [disabled]="showLoginButtonAsDisabled()" (click)="loginFormSubmit()">
+              Log In
+            </button>
+          </form>
+          <div class="login-links form-row" style="margin-left:50px;margin-top:25px;font-size:medium">
+              <div class="form-group col-md-6 mb-0" style="float: left;">
+                <a routerLink="." i18n>Log in via SSO</a>
+              </div>
+
+              <div class="form-group col-md-6 mb-0 text-right" style="float: right;margin-right:50px">
+                <a routerLink="." i18n>I forgot my password</a>
+              </div>
+            </div>
+        </div>
     </div>
-
-    <div class="form-group">
-      <mat-form-field [hideRequiredMarker]="true" class="w-100">
-        <input matInput i18n-placeholder placeholder="Enter your password" formControlName="password"
-               [type]="maskUserPassword ? 'password' : 'text'" required>
-
-        <mat-error i18n>
-          <span *ngIf="!loginForm.get('password')?.valid && loginForm.get('password')?.touched">
-            Please enter a password
-          </span>
-        </mat-error>
-      </mat-form-field>
-    </div>
-
-    <button mat-flat-button i18n color="primary" type="submit" class="w-100" [disabled]="showLoginButtonAsDisabled()" (click)="loginFormSubmit()">
-      Log In
-    </button>
-  </form>
+  </mat-card-content>
+</mat-card>
 </div>

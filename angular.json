@@ -7,7 +7,8 @@
       "i18n": {
         "locales": {
           "en": "src/translate/messages.en.xlf",
-          "de": "src/translate/messages.de.xlf"
+          "de": "src/translate/messages.de.xlf",
+          "fr": "src/translate/messages.fr.xlf"
         }
       },
       "projectType": "application",
@@ -71,6 +72,9 @@
             "de": {
               "localize": [ "de" ]
             },
+            "fr": {
+              "localize": [ "fr" ]
+            },
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -93,6 +97,9 @@
             },
             "de": {
               "browserTarget": "envoy-localization-poc:build:de"
+            },
+            "fr": {
+              "browserTarget": "envoy-localization-poc:build:fr"
             },
             "development": {
               "browserTarget": "envoy-localization-poc:build:development"

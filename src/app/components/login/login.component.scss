@@ -1,0 +1,26 @@
+.login-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#loginFormBrand{
+    background-image: url('/assets/images/brand/envoy-globe.svg') center right no-repeat;
+    background: url('/assets/images/brand/envoy-globe.svg') center right no-repeat, linear-gradient(180deg, #3B2355 0%, #6E4A8E 100%);
+    background-size: 175% 130%;
+    min-width: 400px;
+    min-height: 400px;
+    #bg-img {
+        background: url('/assets/images/brand/envoy-logo-alt.svg') 0 0 no-repeat;
+        //width: 243px;
+        background-size: 60% 120%;
+        margin-left: 100px;
+        height: 75px;
+        padding-top: 200px;
+        color: white;
+    }
+}
+.float-left{
+    float: left;
+}
