@@ -1,12 +1,23 @@
-.example-spacer {
-    flex: 1 1 auto;
+  table {
+    width: 100%;
   }
 
-  .dashboardContainer{
-    background-color: #472c62;
-    color: white;
+  .mat-column-companyName {
+    width: 25%;
   }
-  .mat-menu-content{
-    padding-top:0px !important;
-    padding-bottom:0px !important;
+  .mat-column-foundedDate {
+    width: 25%;
   }
+  .mat-column-revenue{
+    width: 25%;
+  }
+  .mat-column-firstName{
+    width: 25%;
+  }
+  .header{
+    padding-left: 20px;    
+    font-weight: bold;
+}
+th{
+  color: #56A8DE;
+}

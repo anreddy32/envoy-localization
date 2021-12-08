@@ -1,28 +1,39 @@
-<mat-toolbar class="dashboardContainer">
-        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-          <mat-icon>menu</mat-icon>
-        </button>
-        <span i18n>Welcome &nbsp;</span>{{userName}} !!
-        <ng-container style="width: 100%;float: right;">
-            <button mat-button [matMenuTriggerFor]="menu" style="padding-left: 550px">
-                Create Account<mat-icon>arrow_drop_down</mat-icon>
-            </button>
-            
-            <mat-menu #menu="matMenu" xPosition="before">
-                <a mat-menu-item (click)="createAccount()">Business Account</a>
-              </mat-menu>
-        </ng-container>
-        <span class="example-spacer"></span>
+  <header-banner></header-banner>
+      <div class="header">
+          <h2>Business Account(s)</h2>
+      </div>
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+          <!--- Note that these columns can be defined in any order.
+                The actual rendered columns are set as a property on the row definition" -->
         
-        <span class="logout">
-                <button  mat-mini-fab  [matMenuTriggerFor]="menuLogOut"   color="accent">
-                 <mat-icon>perm_identity</mat-icon>
-               </button>
-               <mat-menu #menuLogOut="matMenu">
-                   <button mat-menu-item (click)="logout()">
-                     <mat-icon>power_settings_new</mat-icon>
-                     <span>Logout</span>
-                   </button>
-               </mat-menu>
-             </span>
-      </mat-toolbar>
+          <!-- Position Column -->
+          <ng-container matColumnDef="companyName">
+            <th mat-header-cell *matHeaderCellDef> Company Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.companyName}} </td>
+          </ng-container>
+        
+         
+        
+          <!-- Weight Column -->
+          <ng-container matColumnDef="foundedDate">
+            <th mat-header-cell *matHeaderCellDef> Founded Date </th>
+            <td mat-cell *matCellDef="let element"> {{element.foundedDate}} </td>
+          </ng-container>
+        
+          <!-- Symbol Column -->
+          <ng-container matColumnDef="revenue">
+            <th mat-header-cell *matHeaderCellDef> Revenue </th>
+            <td mat-cell *matCellDef="let element"> {{element.revenue | localCurrency}} </td>
+          </ng-container>
+
+         <!-- Name Column -->
+         <ng-container matColumnDef="firstName">
+            <th mat-header-cell *matHeaderCellDef> Primary Contact </th>
+            <td mat-cell *matCellDef="let element"> {{element.firstName}} {{element.lastName}} </td>
+          </ng-container>
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+        
+        
