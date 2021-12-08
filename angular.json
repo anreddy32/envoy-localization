@@ -8,8 +8,10 @@
         "locales": {
           "en": "src/translate/messages.en.xlf",
           "de": "src/translate/messages.de.xlf",
-          "fr": "src/translate/messages.fr.xlf"
-        }
+          "fr": "src/translate/messages.fr.xlf",
+          "hi": "src/translate/messages.hi.xlf",
+          "zh-Hans": "src/translate/messages.zh-Hans.xlf"
+        },
       },
       "projectType": "application",
       "schematics": {
@@ -84,6 +86,12 @@
             "fr": {
               "localize": [ "fr" ]
             },
+            "hi": {
+              "localize": [ "hi" ]
+            },
+            "zh-Hans": {
+              "localize": [ "zh-Hans" ]
+            },
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -109,6 +117,12 @@
             },
             "fr": {
               "browserTarget": "envoy-localization-poc:build:fr"
+            },
+            "hi": {
+              "browserTarget": "envoy-localization-poc:build:hi"
+            },
+            "zh-Hans": {
+              "browserTarget": "envoy-localization-poc:build:zh-Hans"
             },
             "development": {
               "browserTarget": "envoy-localization-poc:build:development"
