@@ -2,22 +2,9 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="3902961887793684628" datatype="html">
-        <source>Hello</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/dashboard/dashboard.component.html</context>
-          <context context-type="linenumber">1</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="893808002878680364" datatype="html">
-        <source>TestName</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/components/dashboard/dashboard.component.ts</context>
-          <context context-type="linenumber">19</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="2704635977586762526" datatype="html">
         <source>For a World-Ready Workforce</source>
+        <target>面向全球的劳动力</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/login/login.component.html</context>
           <context context-type="linenumber">22</context>
@@ -25,6 +12,7 @@
       </trans-unit>
       <trans-unit id="596374551754386779" datatype="html">
         <source>Log into Envoy</source>
+        <target>登录特使</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/login/login.component.html</context>
           <context context-type="linenumber">28</context>
@@ -32,6 +20,7 @@
       </trans-unit>
       <trans-unit id="203827529942340818" datatype="html">
         <source>Enter your email</source>
+        <target>输入你的电子邮箱</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/login/login.component.html</context>
           <context context-type="linenumber">32</context>
@@ -39,6 +28,7 @@
       </trans-unit>
       <trans-unit id="2794759160468320055" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span *ngIf=&quot;!loginForm.get(&apos;username&apos;)?.valid &amp;&amp; loginForm.get(&apos;username&apos;)?.touched&quot;&gt;"/> Please enter a valid email <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>请输入有效电子邮件</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/login/login.component.html</context>
           <context context-type="linenumber">36,38</context>
@@ -46,6 +36,7 @@
       </trans-unit>
       <trans-unit id="2772023564304193657" datatype="html">
         <source>Enter your password</source>
+        <target>输入您的密码</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/login/login.component.html</context>
           <context context-type="linenumber">45</context>
@@ -53,6 +44,7 @@
       </trans-unit>
       <trans-unit id="3239647626435558094" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span *ngIf=&quot;!loginForm.get(&apos;password&apos;)?.valid &amp;&amp; loginForm.get(&apos;password&apos;)?.touched&quot;&gt;"/> Please enter a password <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>请输入密码</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/login/login.component.html</context>
           <context context-type="linenumber">49,51</context>
@@ -60,6 +52,7 @@
       </trans-unit>
       <trans-unit id="4166166242155319722" datatype="html">
         <source> Log In </source>
+        <target>登录</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/login/login.component.html</context>
           <context context-type="linenumber">56,58</context>
@@ -67,6 +60,7 @@
       </trans-unit>
       <trans-unit id="2252117488591535751" datatype="html">
         <source>Log in via SSO</source>
+        <target>通过 SSO 登录</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/login/login.component.html</context>
           <context context-type="linenumber">62</context>
@@ -74,6 +68,7 @@
       </trans-unit>
       <trans-unit id="892063502898494584" datatype="html">
         <source>I forgot my password</source>
+        <target>我忘记了我的密码</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/login/login.component.html</context>
           <context context-type="linenumber">66</context>
