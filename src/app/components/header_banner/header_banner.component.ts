@@ -7,24 +7,23 @@ import { Router } from '@angular/router';
   styleUrls: ['./header_banner.component.scss']
 })
 export class HeaderBannerComponent implements OnInit {
-  userName:string='';
-  userNameTest:string='';
+  userName: string = '';
 
-  constructor(private router:Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.userName = window.localStorage.getItem('localize_UserName') || '';
   }
 
-  logout(){
-    //this.userService.updateUserDataObject({});
+  logout() {
     this.router.navigate(['/login']);
   }
 
-  createAccount(){
+  createAccount() {
     this.router.navigate(['/createAccount']);
   }
-  accountsList(){
+
+  accountsList() {
     this.router.navigate(['/dashboard']);
   }
 }

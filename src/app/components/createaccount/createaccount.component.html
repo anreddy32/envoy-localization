@@ -1,71 +1,72 @@
 <header-banner></header-banner>
 <div class="create-business-account-container">
-    <mat-card>
-        <mat-card-content>
-            <form ngNativeValidate #consumerAccountForm="ngForm">
-                <div class="header">
-                    <h2>Create Business Account</h2>
-                </div>
-                <div>
-                    <h4>Company Information</h4>
-                </div>
-                <div class="form-group">
-                    <mat-form-field class="w-600" appearance="standard">
-                        <mat-label i18n>Company Name</mat-label>
-                        <input matInput name="companyName" [(ngModel)]="businessAccount.companyName" required>
-                    </mat-form-field>
-                </div>
-                <div class="form-group">
-                    <mat-form-field class="w-600" appearance="standard">
-                        <mat-label i18n>Doing Business As</mat-label>
-                        <input matInput name="doingBusinessAs" [(ngModel)]="businessAccount.doingBusinessAs" required>
-                    </mat-form-field>
-                </div>
-                <div class="form-group">
-                    <mat-form-field class="w-600" appearance="standard"><mat-label i18n>Company Founded On</mat-label>
-                            <input matInput name="foundedDate" [matDatepicker]="picker" [(ngModel)]="businessAccount.foundedDate" required>
-                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-                            <mat-datepicker #picker></mat-datepicker>
-                          </mat-form-field>
-                </div>
-                <div class="form-group">
-                    <mat-form-field class="w-600" appearance="standard">
-                        <mat-label i18n>Company Revenue</mat-label>
-                        <input matInput name="revenue" [(ngModel)]="businessAccount.revenue" required>
-                        <span matPrefix [innerHtml]="currencySign"></span>
-                    </mat-form-field>
-                </div>
-                <br />
+  <mat-card>
+    <mat-card-content>
+      <form ngNativeValidate #consumerAccountForm="ngForm">
+        <div class="header">
+          <h2 i18n>Create Business Account</h2>
+        </div>
+        <div>
+          <h4 i18n>Company Information</h4>
+        </div>
+        <div class="form-group">
+          <mat-form-field class="w-600" appearance="standard">
+            <mat-label i18n>Company Name</mat-label>
+            <input matInput name="companyName" [(ngModel)]="businessAccount.companyName" required>
+          </mat-form-field>
+        </div>
+        <div class="form-group">
+          <mat-form-field class="w-600" appearance="standard">
+            <mat-label i18n>Doing Business As</mat-label>
+            <input matInput name="doingBusinessAs" [(ngModel)]="businessAccount.doingBusinessAs" required>
+          </mat-form-field>
+        </div>
+        <div class="form-group">
+          <mat-form-field class="w-600" appearance="standard">
+            <mat-label i18n>Company Founded On</mat-label>
+            <input matInput name="foundedDate" [matDatepicker]="picker" [(ngModel)]="businessAccount.foundedDate" required>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div class="form-group">
+          <mat-form-field class="w-600" appearance="standard">
+            <mat-label i18n>Company Revenue</mat-label>
+            <input matInput name="revenue" [(ngModel)]="businessAccount.revenue" required>
+            <span matPrefix [innerHtml]="currencySign"></span>
+          </mat-form-field>
+        </div>
+        <br />
 
-                <div>
-                    <h4>Primary Contact</h4>
-                </div>
-                <div class="form-group">
-                    <mat-form-field class="w-600" appearance="standard">
-                        <mat-label i18n>First Name </mat-label>
-                        <input matInput name="firstName" [(ngModel)]="businessAccount.firstName" required>
-                    </mat-form-field>
-                </div>
-                <div class="form-group">
-                    <mat-form-field class="w-600" appearance="standard">
-                        <mat-label i18n>Last Name </mat-label>
-                        <input matInput name="lastName" [(ngModel)]="businessAccount.lastName" required>
-                    </mat-form-field>
-                </div>
+        <div>
+          <h4 i18n>Primary Contact</h4>
+        </div>
+        <div class="form-group">
+          <mat-form-field class="w-600" appearance="standard">
+            <mat-label i18n>First Name </mat-label>
+            <input matInput name="firstName" [(ngModel)]="businessAccount.firstName" required>
+          </mat-form-field>
+        </div>
+        <div class="form-group">
+          <mat-form-field class="w-600" appearance="standard">
+            <mat-label i18n>Last Name </mat-label>
+            <input matInput name="lastName" [(ngModel)]="businessAccount.lastName" required>
+          </mat-form-field>
+        </div>
 
-                <div class="form-group">
-                    <mat-form-field class="w-600" appearance="standard">
-                        <mat-label i18n>Email Address </mat-label>
-                        <input matInput name="email" [(ngModel)]="businessAccount.email" required>
-                    </mat-form-field>
-                </div>
-                <br>
-                <div class="create-business-account-container">
-                    <button mat-flat-button i18n color="primary" type="submit" class="w-100" [disabled]="!consumerAccountForm.form.valid" (click)="openNewAccount()">
-                        Open New Account
-                    </button>
-                </div>
-            </form>
-        </mat-card-content>
-    </mat-card>
+        <div class="form-group">
+          <mat-form-field class="w-600" appearance="standard">
+            <mat-label i18n>Email Address </mat-label>
+            <input matInput name="email" [(ngModel)]="businessAccount.email" required>
+          </mat-form-field>
+        </div>
+        <br>
+        <div class="create-business-account-container">
+          <button mat-flat-button i18n color="primary" type="submit" class="w-100" [disabled]="!consumerAccountForm.form.valid" (click)="openNewAccount()">
+            Open New Account
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
 </div>

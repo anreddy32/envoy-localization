@@ -2,6 +2,69 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
+        <trans-unit id="6765071518635771784" datatype="html">
+        <source>Company Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4266053582842040693" datatype="html">
+        <source>Doing Business As</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9019104055818769726" datatype="html">
+        <source>Company Founded On</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3796247680176854079" datatype="html">
+        <source>Company Revenue</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8608200965199659933" datatype="html">
+        <source>First Name </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2451681264254161296" datatype="html">
+        <source>Last Name </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7803726229453837119" datatype="html">
+        <source>Email Address </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5665565241786811945" datatype="html">
+        <source> Open New Account </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/createaccount/createaccount.component.html</context>
+          <context context-type="linenumber">64,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4630886748335554317" datatype="html">
+        <source>Welcome  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/header_banner/header_banner.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="596374551754386779" datatype="html">
         <source>Log into Envoy</source>
         <context-group purpose="location">

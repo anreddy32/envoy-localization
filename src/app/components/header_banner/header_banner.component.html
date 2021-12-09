@@ -1,29 +1,27 @@
 <mat-toolbar class="dashboardContainer">
-        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-          <mat-icon>menu</mat-icon>
-        </button>
-        <span i18n>Welcome &nbsp;</span>{{userName}}
-        <ng-container style="width: 100%;float: right;">
-            <button mat-button [matMenuTriggerFor]="menu" style="padding-left: 550px">
-                Business Account<mat-icon>arrow_drop_down</mat-icon>
-            </button>
-            
-            <mat-menu #menu="matMenu" xPosition="before">
-                <a mat-menu-item (click)="createAccount()">Create Account</a>
-                <a mat-menu-item (click)="accountsList()">Accounts List</a>
-              </mat-menu>
-        </ng-container>
-        <span class="example-spacer"></span>
-        
-        <span class="logout">
-                <button  mat-mini-fab  [matMenuTriggerFor]="menuLogOut"   color="accent">
-                 <mat-icon>perm_identity</mat-icon>
-               </button>
-               <mat-menu #menuLogOut="matMenu">
-                   <button mat-menu-item (click)="logout()">
-                     <mat-icon>power_settings_new</mat-icon>
-                     <span>Logout</span>
-                   </button>
-               </mat-menu>
-             </span>
-      </mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span i18n>Welcome &nbsp;</span>{{userName}}
+  <ng-container style="width: 100%;float: right;">
+    <button mat-button [matMenuTriggerFor]="menu" style="padding-left: 550px">
+      Business Account<mat-icon>arrow_drop_down</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" xPosition="before">
+      <a mat-menu-item i18n (click)="createAccount()">Create Account</a>
+      <a mat-menu-item i18n (click)="accountsList()">Accounts List</a>
+    </mat-menu>
+  </ng-container>
+  <span class="example-spacer"></span>
+  <span class="logout">
+    <button mat-mini-fab [matMenuTriggerFor]="menuLogOut" color="accent">
+      <mat-icon>perm_identity</mat-icon>
+    </button>
+    <mat-menu #menuLogOut="matMenu">
+      <button mat-menu-item (click)="logout()">
+        <mat-icon>power_settings_new</mat-icon>
+        <span i18n>Logout</span>
+      </button>
+    </mat-menu>
+  </span>
+</mat-toolbar>
