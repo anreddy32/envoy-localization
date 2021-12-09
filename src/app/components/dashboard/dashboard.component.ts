@@ -8,6 +8,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+  locale:string = 'en-US';
+  currencySign:string = '';
   ELEMENT_DATA: any[] = [
   ];
   displayedColumns:string[];
@@ -19,11 +21,17 @@ export class DashboardComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    // this.userService.currentUserDataObject.subscribe((user:any)=>{
-    //   debugger;
-    //   this.userName = user?.userName || '';
-    // })
-    // this.userNameTest = $localize`TestName`;
+    let localizeValue:any = window.localStorage.getItem('localizeLng') || '';
+    if (!localizeValue || localizeValue == 'undefined') {
+      localizeValue = { code: 'en', label: 'English', currencyCode: 'USD', locale: 'en-US', exchangeRate: 1, currencySymbol: '$' };
+    }
+    else {
+      localizeValue = JSON.parse(window.localStorage.getItem('localizeLng') || '');
+    }
+    
+    this.locale = localizeValue.locale.replace('en-IN','hi_IN');
+    this.currencySign = localizeValue.currencySymbol;
+
     this.httpClient.get('http://localhost:3000/businessAccounts' ).subscribe((response: any) => {
       if(!!response){
         this.dataSource = this.ELEMENT_DATA = response;

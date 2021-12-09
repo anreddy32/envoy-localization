@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     this.siteLocale = window.location.pathname.split('/')[1];
     this.siteLanguage = this.languageList ?.find(f => f.code === this.siteLocale) ?.label;
-    this.dateAdapter.setLocale(this.siteLocale);
+    //this.dateAdapter.setLocale(this.siteLocale);
     window.localStorage.setItem('localizeLng' ,JSON.stringify(this.languageList ?.find(f => f.code === this.siteLocale)));
     
   }
