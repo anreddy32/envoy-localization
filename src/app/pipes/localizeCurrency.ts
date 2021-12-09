@@ -10,12 +10,6 @@ export class LocalcurrencyPipe implements PipeTransform {
     constructor(private httpClient: HttpClient) {
        
     }
-    languageList: any[] = [{ code: 'en', label: 'English', currencyCode: 'USD', locale: 'en-US',exchangeRate:1 },
-    { code: 'fr', label: 'French', currencyCode: 'EUR', locale: 'fr-FR',exchangeRate:0.88842 }, 
-        { code: 'de', label: 'German', currencyCode: 'EUR', locale: 'de-DE',exchangeRate:0.88842 },
-        { code: 'hi', label: 'Hindi', currencyCode:'INR',locale:'en-IN',exchangeRate:75.409 },
-        { code: 'zh-Hans', label: 'Chinese', currencyCode:'CNY',locale:'zh_HK', exchangeRate:6.3674 }   
-    ] || [];
     transform(
         value: number,
         currencyCode: string = 'USD',

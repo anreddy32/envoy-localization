@@ -42,11 +42,8 @@ import localezhHansExtra from '@angular/common/locales/extra/zh-Hans';
 
 import localehi from '@angular/common/locales/hi';
 import localehiExtra from '@angular/common/locales/extra/hi';
-
-
 import { registerLocaleData } from '@angular/common';
 
-//registerLocaleData(localeFr, 'fr', localeFrExtra);
 registerLocaleData(localeFr, 'fr-FR', localeFrExtra);
 registerLocaleData(localeDe, 'de-DE', localeDeExtra);
 registerLocaleData(localeEnIN, 'en-IN', localeEnINExtra);

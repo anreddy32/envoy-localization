@@ -16,7 +16,7 @@ export class DashboardComponent implements OnInit {
   dataSource :any[];
 
   constructor(private router:Router, private httpClient: HttpClient) {
-    this.displayedColumns = ['companyName', 'foundedDate', 'revenue','firstName'];
+    this.displayedColumns = ['companyName', 'foundedDate', 'revenue','firstName', 'email'];
     this.dataSource = this.ELEMENT_DATA;
    }
 

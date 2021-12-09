@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { CreateaccountComponent } from './components/createaccount/createaccount.component';
-import { CanActivateRouteGuard } from './guards/can-activate-route.guard';
 import { MAT_MOMENT_DATE_ADAPTER_OPTIONS } from '@angular/material-moment-adapter';
 
 const routes: Routes = [
