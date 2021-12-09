@@ -1,0 +1,136 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "userName": "admin",
+      "password": "admin"
+    },
+    {
+      "id": 2,
+      "userName": "user",
+      "password": "user"
+    }
+  ],
+  "businessAccounts": [
+    {
+      "companyName": "Test",
+      "doingBusinessAs": "est",
+      "foundedDate": "2021-12-15T18:30:00.000Z",
+      "revenue": 5,
+      "firstName": "sdsad",
+      "lastName": "sadsad",
+      "email": "sadsad",
+      "id": 2
+    },
+    {
+      "companyName": "test",
+      "doingBusinessAs": "tert",
+      "foundedDate": "2021-12-22T18:30:00.000Z",
+      "revenue": 488.5076878053173,
+      "firstName": "xzcxz",
+      "lastName": "zxczxc",
+      "email": "xzcxz@fdgf.sd",
+      "id": 3
+    },
+    {
+      "companyName": "test ",
+      "doingBusinessAs": "fre",
+      "foundedDate": "2020-05-17T18:30:00.000Z",
+      "revenue": 3866.414533666509,
+      "firstName": "tazss",
+      "lastName": "sads",
+      "email": "sad@cxv.sd",
+      "id": 4
+    },
+    {
+      "companyName": "englis",
+      "doingBusinessAs": "englis",
+      "foundedDate": "2021-12-22T18:30:00.000Z",
+      "revenue": 343,
+      "firstName": "en",
+      "lastName": "en",
+      "email": "sdsd@dsf.df",
+      "id": 5
+    },
+    {
+      "companyName": "india",
+      "doingBusinessAs": "india",
+      "foundedDate": "2021-12-22T18:30:00.000Z",
+      "revenue": 573.1809200493309,
+      "firstName": "india",
+      "lastName": "india",
+      "email": "india@ddfg.f",
+      "id": 6
+    },
+    {
+      "companyName": "india",
+      "doingBusinessAs": "india",
+      "foundedDate": "2021-12-30T18:30:00.000Z",
+      "revenue": 457.96920791947906,
+      "firstName": "india",
+      "lastName": "india",
+      "email": "india@dfd.jj",
+      "id": 7
+    },
+    {
+      "companyName": "rtasd",
+      "doingBusinessAs": "sd",
+      "foundedDate": "2021-12-30T18:30:00.000Z",
+      "revenue": 456,
+      "firstName": "sdsad",
+      "lastName": "asdsad",
+      "email": "sadsd@dsf.dfd",
+      "id": 8
+    },
+    {
+      "companyName": "sdfd",
+      "doingBusinessAs": "dsfds",
+      "foundedDate": "2021-12-30T18:30:00.000Z",
+      "revenue": 354,
+      "firstName": "ss",
+      "lastName": "df",
+      "email": "df",
+      "id": 9
+    },
+    {
+      "companyName": "sdsad",
+      "doingBusinessAs": "sdsad",
+      "foundedDate": "2021-12-30T18:30:00.000Z",
+      "revenue": 34,
+      "firstName": "sdsd",
+      "lastName": "dsf",
+      "email": "dsfdsf",
+      "id": 10
+    },
+    {
+      "companyName": "december 2",
+      "doingBusinessAs": "december 2",
+      "foundedDate": "2001-12-01T18:30:00.000Z",
+      "revenue": null,
+      "firstName": "dec",
+      "lastName": "11",
+      "email": "des@des.com",
+      "id": 11
+    },
+    {
+      "companyName": "dfdg",
+      "doingBusinessAs": "dfdg",
+      "foundedDate": "2021-12-22T18:30:00.000Z",
+      "revenue": 122,
+      "firstName": "jgjg",
+      "lastName": "jgjgj",
+      "email": "aaa@wqwe.com",
+      "id": 12
+    },
+    {
+      "companyName": "december 2",
+      "doingBusinessAs": "december 2",
+      "foundedDate": "2001-12-01T18:30:00.000Z",
+      "revenue": null,
+      "firstName": "dec",
+      "lastName": "11",
+      "email": "des@des.com",
+      "id": 13
+    }
+  ]
+}
