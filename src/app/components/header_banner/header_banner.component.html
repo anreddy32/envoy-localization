@@ -2,10 +2,10 @@
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon>menu</mat-icon>
   </button>
-  <span i18n>Welcome &nbsp;</span>{{userName}}
+  <span i18n>Welcome </span>&nbsp;{{userName}}
   <ng-container style="width: 100%;float: right;">
-    <button i18n mat-button [matMenuTriggerFor]="menu" style="padding-left: 550px">
-      Business Account<mat-icon>arrow_drop_down</mat-icon>
+    <button mat-button [matMenuTriggerFor]="menu" style="position: absolute;left: 46%;">
+      <span i18n>Business Account</span><mat-icon>arrow_drop_down</mat-icon>
     </button>
     <mat-menu #menu="matMenu" xPosition="before">
       <a mat-menu-item i18n (click)="createAccount()">Create Account</a>

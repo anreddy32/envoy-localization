@@ -100,8 +100,8 @@
           <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="172916359167741425" datatype="html">
-        <source> Revenue (<x id="INTERPOLATION" equiv-text="{{currencySign}}"/>)</source>
+      <trans-unit id="5067093918341980743" datatype="html">
+        <source> Revenue </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/dashboard/dashboard.component.html</context>
           <context context-type="linenumber">16</context>
@@ -121,18 +121,18 @@
           <context context-type="linenumber">24</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4630886748335554317" datatype="html">
-        <source>Welcome  </source>
+      <trans-unit id="2181607301835963404" datatype="html">
+        <source>Welcome </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header_banner/header_banner.component.html</context>
           <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2255122974630596109" datatype="html">
-        <source> Business Account<x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/>arrow_drop_down<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/></source>
+      <trans-unit id="9203129322125327387" datatype="html">
+        <source>Business Account</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/header_banner/header_banner.component.html</context>
-          <context context-type="linenumber">7,8</context>
+          <context context-type="linenumber">8</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1267967133679326155" datatype="html">

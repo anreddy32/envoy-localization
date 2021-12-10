@@ -13,7 +13,7 @@
       <td mat-cell *matCellDef="let element"> {{element.foundedDate | date : 'longDate' : undefined:locale}} </td>
     </ng-container>
     <ng-container matColumnDef="revenue">
-      <th mat-header-cell *matHeaderCellDef i18n> Revenue ({{currencySign}})</th>
+      <th mat-header-cell *matHeaderCellDef > <span i18n> Revenue </span>  ({{currencySign}})</th>
       <td mat-cell *matCellDef="let element"> {{element.revenue | localCurrency}} </td>
     </ng-container>
     <ng-container matColumnDef="firstName">
